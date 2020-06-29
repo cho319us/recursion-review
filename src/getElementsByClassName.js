@@ -23,10 +23,10 @@ var getElementsByClassName = function(className) {
         classFound(doc.childNodes[i]);
       }
     }
-  }
+  };
   //call recursion function with input body document
   classFound(htmlBody);
-  //return the result
+  //return the result!!
   return result;
 };
 
