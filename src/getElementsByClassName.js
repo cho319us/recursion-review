@@ -17,8 +17,8 @@ var getElementsByClassName = function(className) {
       result.push(doc);
     }
     // check if the current element has child nodes, and iterate the child nodes
-    if(doc.HasChildNodes) {
-      for(var i=0; i < doc.childNodes[i]; i++) {
+    if(doc.childNodes) {
+      for(var i=0; i < doc.childNodes.length; i++) {
         // call recursion function with input current child node
         classFound(doc.childNodes[i]);
       }
