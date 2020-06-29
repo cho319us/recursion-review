@@ -37,7 +37,7 @@ var stringifyJSON = function(obj) {
     var objArray = [];
     for (var keys in obj){
       if(typeof(obj[keys])=== 'function' || obj[keys]=== undefined || typeof(obj[keys])=== 'symbol') {
-       continue;
+        continue;
       }
       objArray.push('"'+keys.toString() + '"' + ':' + stringifyJSON(obj[keys]));
     }
